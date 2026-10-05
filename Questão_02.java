@@ -25,7 +25,6 @@ public class Questão_02 {
 
         int dias = 0;
 
-        // Dias dos anos completos
         for (int ano = ano1; ano < ano2; ano++) {
 
             if (ano % 4 == 0) {
@@ -40,26 +39,22 @@ public class Questão_02 {
             31, 31, 30, 31, 30, 31
         };
 
-        // Se o primeiro ano for bissexto
         if (ano1 % 4 == 0) {
             meses[1] = 29;
         }
 
-        // Retira os meses da primeira data
         for (int i = 1; i < mes1; i++) {
             dias = dias - meses[i - 1];
         }
 
         dias = dias - dia1;
 
-        // Se o segundo ano for bissexto
         if (ano2 % 4 == 0) {
             meses[1] = 29;
         } else {
             meses[1] = 28;
         }
 
-        // Soma os meses da segunda data
         for (int i = 1; i < mes2; i++) {
             dias = dias + meses[i - 1];
         }
