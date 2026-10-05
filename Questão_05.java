@@ -28,7 +28,7 @@ public class Questão_05 {
             System.out.println("Digite a cor dos cabelos (louros/castanhos/pretos): ");
             String cabelos = sc.next();
 
-            // Maior e menor idade
+            
             if (primeiraPessoa) {
                 maiorIdade = idade;
                 menorIdade = idade;
@@ -44,8 +44,7 @@ public class Questão_05 {
                 }
             }
 
-            // Mulheres entre 18 e 35 anos,
-            // com olhos verdes e cabelos louros
+            
             if (sexo == 'f' &&
                 idade >= 18 &&
                 idade <= 35 &&
