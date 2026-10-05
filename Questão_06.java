@@ -25,13 +25,10 @@ public class Questão_06 {
             System.out.println("Digite o numero de acidentes: ");
             int acidentes = sc.nextInt();
 
-            // Calcula o indice de acidentes
             int indice = acidentes * 100 / veiculos;
 
-            // Soma os veiculos
             somaVeiculos = somaVeiculos + veiculos;
 
-            // Maior e menor indice
             if (i == 1) {
 
                 maiorIndice = indice;
@@ -53,7 +50,6 @@ public class Questão_06 {
                 }
             }
 
-            // Cidades com menos de 2000 veiculos
             if (veiculos < 2000) {
                 somaAcidentesMenos2000 =
                     somaAcidentesMenos2000 + acidentes;
@@ -62,7 +58,6 @@ public class Questão_06 {
             }
         }
 
-        // Calcula as medias
         double mediaVeiculos = somaVeiculos / 5.0;
 
         double mediaAcidentes = 0;
